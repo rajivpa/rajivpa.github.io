@@ -2,3 +2,13 @@
   height: 400px;
   overflow-y: auto;
 }*/
+
+#mainPanel,#x_panel_cont,#searchPane{
+	padding: 5px;
+}
+
+@media (max-width: 767px) {
+	div div.rsltsPane{
+		padding: 0px;
+	}
+}

@@ -7,7 +7,7 @@ body.nav-sm .container.body .left_col {
 }
 
 body.nav-sm .container.body .right_col {
-    padding: 10px 20px;
+   /* padding: 10px 20px;*/
     margin-left: 70px;
     z-index: 2;
 }
@@ -207,7 +207,7 @@ body .container.body .right_col {
 }
 
 body.nav-md .container.body .right_col {
-    padding: 10px 20px 0;
+ /*   padding: 10px 20px 0; */
     margin-left: 230px;
 }
 
@@ -233,7 +233,7 @@ body.nav-md .container.body .right_col {
         padding-right: 0
     }
     .right_col {
-        padding: 10px !important;
+        /*padding: 10px !important;*/
     }
 }
 
@@ -1096,12 +1096,12 @@ h2 {
 }
 
 .x_content {
-    padding: 0 5px 6px;
+  /*  padding: 0 5px 6px; */
     position: relative;
     width: 100%;
     float: left;
     clear: both;
-    margin-top: 5px;
+  /*  margin-top: 5px;*/
 }
 
 .x_content h4 {
@@ -1158,7 +1158,7 @@ legend {
 }
 
 .well.profile_view .bottom {
-    margin-top: -20px;
+   
     background: #F2F5F7;
     padding: 9px 0;
     border-top: 1px solid #E6E9ED;
