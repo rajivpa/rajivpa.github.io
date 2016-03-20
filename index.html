@@ -220,14 +220,16 @@
 													<div class="x_content">
 														<form id="searchBuddy" role="form"
 															class="form-horizontal form-label-left input_mask">
-															<div class="col-md-3">
-																<br />
-																<br /> <label> <input id="ticketsBooked"
+															<div class="col-md-3 col-sm-12 col-xs-12">
+																<div class="col-md-12 col-sm-12 col-xs-12 ">
+																<label> <input id="ticketsBooked"
 																	type="checkbox"> I have booked my tickets.
 																</label>
 															</div>
-															<div class="col-md-9">
-																<div class="col-md-4 form-group has-feedback">
+															<br/>
+															</div>
+															<div class="col-md-9 col-sm-12 col-xs-12">
+																<div class="col-md-4 col-sm-4 form-group has-feedback">
 																	<input type="text"
 																		class="form-control has-feedback-left"
 																		id="single_cal3" placeholder="Travel Date"
@@ -236,19 +238,18 @@
 																		aria-hidden="true"></span> <span
 																		id="inputSuccess2Status3" class="sr-only">(success)</span>
 																</div>
-																<div class="col-md-4 form-group has-feedback">
+																<div class="col-md-4 col-sm-4 form-group has-feedback">
 																	<input type="text"
 																		class="form-control has-feedback-left"
 																		id="inputSuccess2" placeholder="Departure City">
 																</div>
-																<div class="col-md-4 form-group has-feedback">
+																<div class="col-md-4 col-sm-4 form-group has-feedback">
 																	<input type="text"
 																		class="form-control has-feedback-left"
 																		id="inputSuccess3" placeholder="Destination City">
 																</div>
 
-																<div id="airlines"
-																	class="col-md-4 form-group has-feedback"
+																<div id="airlines"	class="col-md-4 col-sm-4 form-group has-feedback"
 																	style="display: none">
 																	<select class="form-control" tabindex="-1"
 																		style="width: 100%">
@@ -262,27 +263,27 @@
 																</div>
 
 																<div id="flightNo"
-																	class="col-md-4 form-group has-feedback"
+																	class="col-md-4 col-sm-4 form-group has-feedback"
 																	style="display: none">
 																	<input type="text"
 																		class="form-control has-feedback-left"
 																		id="inputSuccess4" placeholder="Flight No">
 																</div>
-																<div id="pnrNo" class="col-md-4 form-group has-feedback"
+																<div id="pnrNo" class="col-md-4 col-sm-4 form-group has-feedback"
 																	style="display: none">
 																	<input type="text"
 																		class="form-control has-feedback-left"
 																		id="inputSuccess5" placeholder="PNR No">
 																</div>
-																<div class="col-md-12">
+																<div class="col-md-12 col-sm-12 col-xs-12 ">
 																	<div class="ln_solid"></div>
 																	<div class="form-group">
 																		<div
-																			class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
+																			class="col-md-6 col-sm-12 col-xs-12 col-md-offset-4 col-sm-offset-4 col-xs-offset-2">
+																			<button id="searchResetBtn"  type="button"
+																				class="btn btn-primary">Reset</button>
 																			<button id="searchBtn" type="button"
-																				class="btn btn-dark">Search</button>
-																			<button id="searchResetBtn" type="button"
-																				class="btn btn-dark">Reset</button>
+																				class="btn btn-success">Search</button>
 																		</div>
 																	</div>
 																</div>
@@ -301,10 +302,36 @@
 														</h2>
 
 														<ul class="nav navbar-right panel_toolbox">
-															<li><a class="collapse-link"><i
+															<li id="inviteBtnSet" style="display:none">	<button id="sendInviteBtn" type="button"
+																	class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-md">Invite</button>
+																														<li><a class="collapse-link"><i
 																	class="fa fa-chevron-up"></i></a></li>
-
 														</ul>
+														<!-- Small modal -->
+
+						                <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-hidden="true">
+						                  <div class="modal-dialog modal-md">
+						                    <div class="modal-content">
+
+						                      <div class="modal-header">
+						                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+						                        </button>
+						                        <h4 class="modal-title" id="myModalLabel2">Send request to seat together</h4>
+						                      </div>
+						                      <div class="modal-body">
+																		<textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+																			data-parsley-validation-threshold="10" placeholder="Hi,&#013;&#010; Would you be interested in flying together from Pune to Delhi. "></textarea>
+																		<br/>
+						                      </div>
+																	<div class="modal-footer">
+						                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						                        <button type="button" class="btn btn-primary">Send</button>
+						                      </div>
+
+						                    </div>
+						                  </div>
+						                </div>
+						                <!-- /modals -->
 														<div class="clearfix"></div>
 													</div>
 													<div id="searchResltsPanel" class="x_content">
@@ -319,8 +346,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>		
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -336,7 +363,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -354,7 +381,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
@@ -368,8 +395,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>		
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -385,7 +412,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -403,7 +430,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
@@ -417,8 +444,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>	
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -434,7 +461,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -452,7 +479,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
@@ -466,8 +493,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>			
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -483,7 +510,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -501,7 +528,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
@@ -515,8 +542,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>	
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -532,7 +559,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -550,7 +577,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
@@ -564,8 +591,8 @@
 																	<div class="col-md-1 col-xs-2 checkbox-inline">
 																		 <input type="checkbox" value="">
 																	</div>
-																</div>	
-																<div class="searchProfileRow">																	
+																</div>
+																<div class="searchProfileRow">
 																		<div class="left col-xs-7">
 																			<h2>First Last</h2>
 																			<p>
@@ -581,7 +608,7 @@
 																			<img src="images/user.png" alt=""
 																				class="img-circle img-responsive">
 																		</div>
-																</div>		
+																</div>
 																<div class="searchProfileRow">
 																	<div class="col-xs-12 bottom text-center">
 																		<div class="col-xs-12 col-sm-6 emphasis">
@@ -599,7 +626,7 @@
 																			</button>
 																		</div>
 																	</div>
-																</div>	
+																</div>
 															</div>
 														</div>
 													</div>

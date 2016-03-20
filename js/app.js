@@ -4,7 +4,7 @@ $(function(){
 })
 $(document).ready(function() {
 
-
+   var inviteBtnsVisible=false;
    $('#ticketsBooked').change(function () {
       if ($('#ticketsBooked').is(':checked')) {
           $('#airlines').show();
@@ -25,4 +25,11 @@ $(document).ready(function() {
        $('#searchBuddyResults').hide();
    }));
 
+   $('div.searchProfileRow input:checkbox').change(function(){
+       if(this.checked){
+         if(inviteBtnsVisible) return;
+          $('#inviteBtnSet').show();
+          inviteBtnsVisible=true;
+       }
+   })
 });

@@ -12,3 +12,10 @@
 		padding: 0px;
 	}
 }
+#message{
+	font-size: 12px;
+}
+
+.modal-footer .btn+.btn {
+    margin-bottom: 5px;
+}
