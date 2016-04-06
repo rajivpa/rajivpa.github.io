@@ -17,8 +17,8 @@ body {
 }
 
 footer{
-	white-space: nowrap;
-	font-size: 10px;
+  white-space: nowrap;
+  font-size: 10px;
 }
 /* Add a dark background color with a little bit see-through */ 
 /*.navbar {
@@ -95,10 +95,15 @@ textarea {
 }
 
 .navbar-collapse{
-	border-top: 0px;
+  border-top: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a.highlights{
+  color: #fff;
+  background-color:transparent; 
 }
 
 @media (max-width: 767px)
 .navbar-offcanvas {
-	top: 80px;
+  top: 80px;
 }

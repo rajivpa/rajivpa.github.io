@@ -117,13 +117,67 @@
 		    </div>
 		    <div class="col-xs-12" >
 		     <div class="list-group">
-	
-		        <a href="#" class="list-group-item ">
-		        	Upcoming Trips
-		        	<span style="margin-top:5px;" class="glyphicon glyphicon-menu-right pull-right"></span>
-		        </a>
-	
-		       <a href="#" class="list-group-item">Past Trips<span style="margin-top:5px;" class="glyphicon glyphicon-menu-right pull-right"></span></a>
+				<a href="#" class="list-group-item">
+        			<div class="row">
+        				<div class="col-xs-10" >
+			        				<h3>Upcoming Trips <span style="margin-left:5px;" >(2)</span></h3><br/>
+		        			<div class="row">
+		        				<div class="col-xs-5" style="font-size: 28px;color: blue">
+		        					4
+		        				</div>
+		        				<div class="col-xs-5" style="font-size: 28px;color: green">
+		        					2
+		        				</div>
+		        				<div class="col-xs-2" style="font-size: 28px;color: red">
+		        					1
+		        				</div>
+		        			</div>
+		        			<div class="row">
+		        				<div class="col-xs-5" style="font-size: 12px;color: blue">
+		        					Invites Sent
+		        				</div>
+		        				<div class="col-xs-5" style="font-size: 12px;color: green">
+		        					Accepted
+		        				</div>
+		        				<div class="col-xs-2" style="font-size: 12px;color: red">
+		        					Declined
+		        				</div>
+		        			</div>
+		        			
+		        			
+		        		</div>
+		        		<div class="col-xs-2" >	
+        					<span style="margin-top:70px;" class="glyphicon glyphicon-menu-right pull-right"></span>
+        				</div>
+        			</div>	
+				</a>	
+		       <a href="#" class="list-group-item">
+		       		<div class="row">
+        				<div class="col-xs-10" >
+			        				<h3>Past Trips <span style="margin-left:5px;" >(10)</span></h3><br/>
+		        			<div class="row">
+		        				<div class="col-xs-5" style="font-size: 28px;color: green">
+		        					10
+		        				</div>
+		        				<div class="col-xs-5" style="font-size: 28px;color: blue">
+		        					8
+		        				</div>
+		        			</div>
+		        			<div class="row">
+		        				<div class="col-xs-5" style="font-size: 12px;color: green">
+		        					Ratings Given
+		        				</div>
+		        				<div class="col-xs-5" style="font-size: 12px;color: blue">
+		        					Ratings Received
+		        				</div>
+		        				
+		        			</div>
+		        		</div>
+		        		<div class="col-xs-2" >	
+        					<span style="margin-top:70px;" class="glyphicon glyphicon-menu-right pull-right"></span>
+        				</div>
+        			</div>	
+		       </a>
 		     </div>
 		    </div>
 		</div>
@@ -177,7 +231,7 @@
 	        <!-- 'Sticky' (non-collapsing)  menu item(s) -->
 	        
 	          <ul class="nav navbar-nav row" style="margin: 0px;">
-	            <li class="col-xs-3 col-sm-3 col-md-3"><a id="tripsBtn" class="text-center" ><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></li>
+	            <li id="trips" class="col-xs-3 col-sm-3 col-md-3"><a id="tripsBtn" class="text-center " ><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></li>
 	            <li class="col-xs-5 col-sm-5 col-md-5"><a id="findBuddyBtn" class="text-center" ><span class="glyphicon glyphicon-search"></span><br>Find Buddy</a></li>
 	            <li class="col-xs-4 col-sm-4 col-md-4"><a class="text-center"  >
 	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
@@ -213,23 +267,13 @@
     <script>
 		$(document).ready(function(){
 		  // Add smooth scrolling to all links in navbar + footer link
-		  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+		  $("#mainCont, #header").on('click', function(event) {
 		
 		  // Prevent default anchor click behavior
 		  event.preventDefault();
 		
-		  // Store hash
-		  var hash = this.hash;
-		
-		  // Using jQuery's animate() method to add smooth page scroll
-		  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-		  $('html, body').animate({
-		   // scrollTop: $(hash).offset().top
-		  }, 900, function(){
-		
-		    // Add hash (#) to URL when done scrolling (default click behavior)
-		    window.location.hash = hash;
-		    });
+		  
+		  
 		  });
 		})
 	</script>
