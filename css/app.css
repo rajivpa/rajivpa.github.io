@@ -1,21 +1,104 @@
-/*#searchResltsPanel {
-  height: 400px;
-  overflow-y: auto;
-}*/
 
-#mainPanel,#x_panel_cont,#searchPane{
-	padding: 5px;
+.navbar-static-top {
+  margin-bottom: 19px;
 }
 
-@media (max-width: 767px) {
-	div div.rsltsPane{
-		padding: 0px;
-	}
-}
-#message{
-	font-size: 12px;
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
 }
 
-.modal-footer .btn+.btn {
-    margin-bottom: 5px;
+ #mainCont.container-fluid {
+      padding-top: 80px;
+  }
+  
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+
+footer{
+	white-space: nowrap;
+	font-size: 10px;
+}
+/* Add a dark background color with a little bit see-through */ 
+/*.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+/*.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+/*.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+/*.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+/*.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+/*.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+/*.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+/*.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+
+/* Overwrite default styles of h3 and h4 */
+h2 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px; 
+    color: #111;
+}
+
+/* Remove rounded borders on input fields */
+.form-control {
+    border-radius: 0;
+}
+
+/* Disable the ability to resize textareas */
+textarea {
+    resize: none;
+}
+
+.gly-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navbar-collapse{
+	border-top: 0px;
+}
+
+@media (max-width: 767px)
+.navbar-offcanvas {
+	top: 80px;
 }

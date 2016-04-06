@@ -1,779 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    
+    <title>Travel Buddy</title>
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- Meta, title, CSS, favicons, etc. -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.offcanvas.css"/>
 
-<title>Travel Buddy</title>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-<link href="css/animate.min.css" rel="stylesheet">
-<!-- Custom styling plus plugins -->
-<link href="css/app.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
-<link href="css/icheck/flat/green.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css"
-	href="css/progressbar/bootstrap-progressbar-3.3.0.css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
-<script src="js/jquery.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
-<!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-</head>
+<!-- Include Bootstrap Datepicker -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
 
 
-<body class="nav-md">
-	<div class="container body">
-		<div class="main_container">
-			<div class="col-md-3 left_col">
-				<div class="left_col scroll-view">
-					<div class="navbar nav_title" style="border: 0;">
-						<a href="index.html" class="site_title"><i class="fa fa-paw"></i>
-							<span>Travel Buddy</span></a>
-					</div>
-					<div class="clearfix"></div>
-					<!-- menu prile quick info -->
-					<div class="profile">
-						<div class="profile_pic">
-							<img src="images/profile.jpg" alt="..."
-								class="img-circle profile_img">
-						</div>
-						<div class="profile_info">
-							<span>Traveller</span>
-							<h2>Spider Man</h2>
-						</div>
-					</div>
-					<!-- /menu prile quick info -->
-
-					<div class="clearfix"></div>
-
-					<!-- sidebar menu -->
-					<div id="sidebar-menu"
-						class="main_menu_side hidden-print main_menu">
-						<div class="menu_section">
-							<ul class="nav side-menu">
-								<li><a><i class="fa fa-edit"></i> Trips & Buddies<span
-										class="fa fa-chevron-down"></span></a>
-									<ul class="nav child_menu" style="display: none">
-										<li><a href="empty.html">Rate Buddy</a></li>
-										<li><a href="empty.html">Meny2.2s</a></li>
-									</ul></li>
-								<li><a><i class="fa fa-home"></i> Search Buddies <span
-										class="fa fa-chevron-down"></span></a></li>
-							</ul>
-						</div>
-
-					</div>
-					<!-- /sidebar menu -->
-
-					<!-- /menu footer buttons -->
-					<div class="sidebar-footer hidden-small">
-						<a data-toggle="tooltip" data-placement="top" title="Settings">
-							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-						</a> <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-						</a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span
-							class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-						</a> <a data-toggle="tooltip" data-placement="top" title="Logout">
-							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-						</a>
-					</div>
-					<!-- /menu footer buttons -->
-				</div>
-			</div>
-
-			<!-- top navigation -->
-			<div class="top_nav">
-				<div class="nav_menu">
-					<nav class="" role="navigation">
-						<div class="nav toggle">
-							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
-						</div>
-						<ul class="nav navbar-nav navbar-right">
-							<li class=""><a href="javascript:;"
-								class="user-profile dropdown-toggle" data-toggle="dropdown"
-								aria-expanded="false"> <img src="images/user.png" alt="">Spider
-									Man <span class=" fa fa-angle-down"></span>
-							</a>
-								<ul
-									class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-									<span class="badge bg-red pull-right">50%</span>
-									<li><a href="javascript:;"> Profile</a></li>
-
-									<li><a href="javascript:;">Help</a></li>
-									<li><a href="login.html"><i
-											class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-								</ul></li>
-
-							<li role="presentation" class="dropdown"><a
-								href="javascript:;" class="dropdown-toggle info-number"
-								data-toggle="dropdown" aria-expanded="false"> <i
-									class="fa fa-envelope-o"></i> <span class="badge bg-green">6</span>
-							</a>
-								<ul id="menu1"
-									class="dropdown-menu list-unstyled msg_list animated fadeInDown"
-									role="menu">
-									<li><a> <span class="image"> <img	src="images/user.png" alt="Profile Image" />
-										</span> <span> <span>Bat Man</span> <span class="time">1
-													hour ago</span>
-										</span> <span class="message"> Hey spidey lets fly together to
-												Gotham... </span>
-									</a></li>
-									<li><a> <span class="image"> <img
-												src="images/user.png" alt="Profile Image" />
-										</span> <span> <span>Iron Man</span> <span class="time">6
-													hour ago</span>
-										</span> <span class="message"> Join me for LA trip, i will
-												tell you about Jarvis... </span>
-									</a></li>
-									<li><a> <span class="image"> <img
-												src="images/user.png" alt="Profile Image" />
-										</span> <span> <span>He Man</span> <span class="time">3
-													mins ago</span>
-										</span> <span class="message"> Lets catch up over flight to
-												Castle Grayskull... </span>
-									</a></li>
-
-									<li>
-										<div class="text-center">
-											<a> <strong>See All Alerts</strong> <i
-												class="fa fa-angle-right"></i>
-											</a>
-										</div>
-									</li>
-								</ul></li>
-						</ul>
-					</nav>
-				</div>
-
-			</div>
-			<!-- /top navigation -->
-
-			<!-- page content -->
-			<div class="right_col" role="main">
-				<div class="">
-				    <!-- change 3/18 -->
-					<div id="mainPanel" class="col-md-12 col-sm-12 col-xs-12">
-						 <!-- change 3/18 -->
-						<div id="x_panel_cont" class="x_panel">
-							<div class="x_content">
-								<!-- start accordion -->
-								<div class="accordion" id="accordion1" role="tablist"
-									aria-multiselectable="true">
-									<div class="panel">
-										<a class="panel-heading collapsed" role="tab"
-											id="headingThree1" data-toggle="collapse"
-											data-parent="#accordion1" href="#collapse1"
-											aria-expanded="false" aria-controls="collapseThree">
-											<h4 class="panel-title">Trips & Buddies</h4>
-										</a>
-										<div id="collapse1" class="panel-collapse collapse"
-											role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												<p>
-													<strong>Collapsible Item 3 data</strong>
-												</p>
-												Anim pariatur cliche reprehenderit, enim eiusmod high life
-												accusamus terry richardson ad squid. 3 wolf moon officia
-												aute, non cupidatat skateboard dolor brunch. Food truck
-												quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor
-											</div>
-										</div>
-									</div>
-									<div class="panel">
-										<a class="panel-heading " role="tab" id="headingTwo1"
-											data-toggle="collapse" data-parent="#accordion1"
-											href="#collapseTwo1" aria-expanded="true"
-											aria-controls="collapseTwo">
-											<h4 class="panel-title">Search Buddy</h4>
-										</a>
-										<div id="collapseTwo1" class="panel-collapse collapse in"
-											role="tabpanel" aria-labelledby="headingTwo">
-											<div id="searchPane" class="well">
-												<div class="x_panel">
-													<div class="x_title">
-														<h2>
-															Flight Details <small>tell us where you are going</small>
-														</h2>
-
-														<ul class="nav navbar-right panel_toolbox">
-															<li><a class="collapse-link"><i
-																	class="fa fa-chevron-up"></i></a></li>
-
-														</ul>
-														<div class="clearfix"></div>
-													</div>
-													<div class="x_content">
-														<form id="searchBuddy" role="form"
-															class="form-horizontal form-label-left input_mask">
-															<div class="col-md-3 col-sm-12 col-xs-12">
-																<div class="col-md-12 col-sm-12 col-xs-12 ">
-																<label> <input id="ticketsBooked"
-																	type="checkbox"> I have booked my tickets.
-																</label>
-															</div>
-															<br/>
-															</div>
-															<div class="col-md-9 col-sm-12 col-xs-12">
-																<div class="col-md-4 col-sm-4 form-group has-feedback">
-																	<input type="text"
-																		class="form-control has-feedback-left"
-																		id="single_cal3" placeholder="Travel Date"
-																		aria-describedby="inputSuccess2Status3"> <span
-																		class="fa fa-calendar-o form-control-feedback left"
-																		aria-hidden="true"></span> <span
-																		id="inputSuccess2Status3" class="sr-only">(success)</span>
-																</div>
-																<div class="col-md-4 col-sm-4 form-group has-feedback">
-																	<input type="text"
-																		class="form-control has-feedback-left"
-																		id="inputSuccess2" placeholder="Departure City">
-																</div>
-																<div class="col-md-4 col-sm-4 form-group has-feedback">
-																	<input type="text"
-																		class="form-control has-feedback-left"
-																		id="inputSuccess3" placeholder="Destination City">
-																</div>
-
-																<div id="airlines"	class="col-md-4 col-sm-4 form-group has-feedback"
-																	style="display: none">
-																	<select class="form-control" tabindex="-1"
-																		style="width: 100%">
-																		<option value="-1" selected>Airlines</option>
-																		<option value="9W">Jet Airways</option>
-																		<option value="IN">Indigo</option>
-																		<option value="AI">Air India</option>
-																		<option value="VT">Vistara</option>
-																		<option value="SJ">Spice Jet</option>
-																	</select>
-																</div>
-
-																<div id="flightNo"
-																	class="col-md-4 col-sm-4 form-group has-feedback"
-																	style="display: none">
-																	<input type="text"
-																		class="form-control has-feedback-left"
-																		id="inputSuccess4" placeholder="Flight No">
-																</div>
-																<div id="pnrNo" class="col-md-4 col-sm-4 form-group has-feedback"
-																	style="display: none">
-																	<input type="text"
-																		class="form-control has-feedback-left"
-																		id="inputSuccess5" placeholder="PNR No">
-																</div>
-																<div class="col-md-12 col-sm-12 col-xs-12 ">
-																	<div class="ln_solid"></div>
-																	<div class="form-group">
-																		<div
-																			class="col-md-6 col-sm-12 col-xs-12 col-md-offset-4 col-sm-offset-4 col-xs-offset-2">
-																			<button id="searchResetBtn"  type="button"
-																				class="btn btn-primary">Reset</button>
-																			<button id="searchBtn" type="button"
-																				class="btn btn-success">Search</button>
-																		</div>
-																	</div>
-																</div>
-
-															</div>
-														</form>
-													</div>
-												</div>
 
 
-												<div id="searchBuddyResults" class="x_panel"
-													style="display: none">
-													<div class="x_title">
-														<h2>
-															CoTravellers <small>matching your profile</small>
-														</h2>
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet">
 
-														<ul class="nav navbar-right panel_toolbox">
-															<li id="inviteBtnSet" style="display:none">	<button id="sendInviteBtn" type="button"
-																	class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-md">Invite</button>
-																														<li><a class="collapse-link"><i
-																	class="fa fa-chevron-up"></i></a></li>
-														</ul>
-														<!-- Small modal -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
 
-						                <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-hidden="true">
-						                  <div class="modal-dialog modal-md">
-						                    <div class="modal-content">
-
-						                      <div class="modal-header">
-						                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
-						                        </button>
-						                        <h4 class="modal-title" id="myModalLabel2">Send request to seat together</h4>
-						                      </div>
-						                      <div class="modal-body">
-																		<textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
-																			data-parsley-validation-threshold="10" placeholder="Hi,&#013;&#010; Would you be interested in flying together from Pune to Delhi. "></textarea>
-																		<br/>
-						                      </div>
-																	<div class="modal-footer">
-						                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						                        <button type="button" class="btn btn-primary">Send</button>
-						                      </div>
-
-						                    </div>
-						                  </div>
-						                </div>
-						                <!-- /modals -->
-														<div class="clearfix"></div>
-													</div>
-													<div id="searchResltsPanel" class="x_content">
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div  class="rsltsPane col-md-4 col-sm-4 col-xs-12 animated fadeInDown">
-															<div class="well profile_view">
-																<div class="searchProfileRow">
-																	<div class="col-md-11 col-xs-10">
-																		<h4 class="brief">
-																			<i>Profile Title </i>
-																		</h4>
-																	</div>
-																	<div class="col-md-1 col-xs-2 checkbox-inline">
-																		 <input type="checkbox" value="">
-																	</div>
-																</div>
-																<div class="searchProfileRow">
-																		<div class="left col-xs-7">
-																			<h2>First Last</h2>
-																			<p>
-																				<strong>About: </strong> Fun fact
-																			</p>
-																			<ul class="list-unstyled">
-																				<li><i class="fa "></i><span
-																					class="glyphicon glyphicon-thumbs-up"></span> Likes
-																					golf</li>
-																			</ul>
-																		</div>
-																		<div class="right col-xs-5 text-center">
-																			<img src="images/user.png" alt=""
-																				class="img-circle img-responsive">
-																		</div>
-																</div>
-																<div class="searchProfileRow">
-																	<div class="col-xs-12 bottom text-center">
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<p class="ratings">
-																				<a>4.0</a> <a href="#"><span class="fa fa-star"></span></a>
-																				<a href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star"></span></a> <a
-																					href="#"><span class="fa fa-star-o"></span></a>
-																			</p>
-																		</div>
-																		<div class="col-xs-12 col-sm-6 emphasis">
-																			<button type="button" class="btn btn-primary btn-xs">
-																				<i class="fa fa-user"> </i> View Profile
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="panel">
-										<a class="panel-heading collapsed" role="tab"
-											id="headingThree1" data-toggle="collapse"
-											data-parent="#accordion1" href="#collapseThree1"
-											aria-expanded="false" aria-controls="collapseThree">
-											<h4 class="panel-title">Testimonials</h4>
-										</a>
-										<div id="collapseThree1" class="panel-collapse collapse"
-											role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												<p>
-													<strong>Collapsible Item 3 data</strong>
-												</p>
-												Anim pariatur cliche reprehenderit, enim eiusmod high life
-												accusamus terry richardson ad squid. 3 wolf moon officia
-												aute, non cupidatat skateboard dolor brunch. Food truck
-												quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor
-											</div>
-										</div>
-									</div>
-									<div class="panel">
-										<a class="panel-heading collapsed" role="tab"
-											id="headingThree1" data-toggle="collapse"
-											data-parent="#accordion1" href="#collapseFour1"
-											aria-expanded="false" aria-controls="collapseThree">
-											<h4 class="panel-title">Feedback</h4>
-										</a>
-										<div id="collapseFour1" class="panel-collapse collapse"
-											role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												<p>
-													<strong>Collapsible Item 3 data</strong>
-												</p>
-												Anim pariatur cliche reprehenderit, enim eiusmod high life
-												accusamus terry richardson ad squid. 3 wolf moon officia
-												aute, non cupidatat skateboard dolor brunch. Food truck
-												quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- end of accordion -->
-
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="clearfix"></div>
-
-
-			</div>
-			<!-- /page content -->
-
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+   <!-- Static navbar -->
+	<header class="clearfix">
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Logo</a>
+		    </div>
+		    <div id="navbar" class="navbar-collapse collapse">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="active"><a href="#">Home</a></li>
+		        <li><a href="#about">Profile</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Ratings</a></li>
+		            <li><a href="#">Testimonials</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Contact Us</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!--/.nav-collapse -->
+		    	<div class="navbar-header">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#"><p><span class="glyphicon glyphicon-home"></span> Home</p></a></li>
+                         <li><a href="#"><span class="glyphicon glyphicon-bell"></span> Messages</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-cog"></span> Settings <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+                     </ul>
+		  		</div>
+		  	</div>	
+		</nav> 
+	</header>
+	
+	<!-- Main container  -->
+	<div id="mainCont" class="container-fluid">
+		 <!--  Trips Page -->
+		 <div id="tripsPage" class="row">
+		    <div class="col-xs-12" >
+		    	<h2>Trips</h2>
+		    </div>
+		    <div class="col-xs-12" >
+		     <div class="list-group">
+	
+		        <a href="#" class="list-group-item ">
+		        	Upcoming Trips
+		        	<span style="margin-top:5px;" class="glyphicon glyphicon-menu-right pull-right"></span>
+		        </a>
+	
+		       <a href="#" class="list-group-item">Past Trips<span style="margin-top:5px;" class="glyphicon glyphicon-menu-right pull-right"></span></a>
+		     </div>
+		    </div>
 		</div>
-
-
+		
+		<!--  FindBuddy Page -->
+		 <div id="findBuddyPage" class="row" style="display:none">
+		    <div class="col-xs-12" >
+		    	<h2>Find Buddy</h2>
+		    </div>
+			<div class="col-xs-12" >
+		    	<form id="flightDetailsForm" role="form">
+		    		<div class="form-group row">
+			    		 
+			    		 <div class="col-xs-12 date">	
+							    <label  for="datetimepicker1" >Flight Date</label>
+							    <div class='input-group date' id='datetimepicker1'>
+				                    <span class="input-group-addon">
+				                        <span class="glyphicon glyphicon-calendar"></span>
+				                    </span>
+				                    <input type='text' class="form-control" placeholder="Flight Date" disabled="disabled"/>
+				                   
+				                </div>
+				           </div> 
+		    		</div>
+		    		<div class="form-group row">
+			    		 <div class="col-xs-5">	
+			    		 		<label  for="fromCity" >From City</label>	
+							     <input type="text" class="form-control" id="fromCity" placeholder="From ">
+				         </div>
+				         <label  for="toCity" class="col-xs-2 form-control-label "><span class="glyphicon glyphicon-transfer"></span></label>
+				         <div class="col-xs-5">	
+							     <label  for="toCity" >To City</label>
+							     <input type="text" class="form-control" id="toCity" placeholder="To ">
+				         </div> 
+				         
+		    		</div>
+		    		<div class="form-group row">
+			    		 <div class="col-xs-12">	
+							     <button type="button" class="btn btn-primary btn-block">Search</button>
+				         </div>
+				         
+		    		</div>
+		    	</form>
+		    </div>	
+		</div>
 	</div>
+   
+	<footer class="clearfix">
+		<nav class="navbar navbar-inverse navbar-fixed-bottom" style="height:50px;">
+	      <div  class="container-fluid">
+	        <!-- 'Sticky' (non-collapsing)  menu item(s) -->
+	        
+	          <ul class="nav navbar-nav row" style="margin: 0px;">
+	            <li class="col-xs-3 col-sm-3 col-md-3"><a id="tripsBtn" class="text-center" ><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></li>
+	            <li class="col-xs-5 col-sm-5 col-md-5"><a id="findBuddyBtn" class="text-center" ><span class="glyphicon glyphicon-search"></span><br>Find Buddy</a></li>
+	            <li class="col-xs-4 col-sm-4 col-md-4"><a class="text-center"  >
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span><br>Ratings</a></li>
+	          </ul> 
+<!-- 
+	          <div class="col-xs-4 text-center"><a class="text-center" href="#"><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></div>
+	          <div class="col-xs-4 text-center"><a class="text-center" href="#"><span class="glyphicon glyphicon-search"></span><br>Find Buddy</a></div>
+	          <div class="col-xs-4 text-center"><a class="text-center" href="#">
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
+	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span><br>Ratings</a></div>
+	        </div>
+ -->	        
+	      </div>
+	    </nav>
+	</footer>
 
-	<div id="custom_notifications" class="custom-notifications dsp_none">
-		<ul class="list-unstyled notifications clearfix"
-			data-tabbed_notifications="notif-group">
-		</ul>
-		<div class="clearfix"></div>
-		<div id="notif-group" class="tabbed_notifications"></div>
-	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/bootstrap.offcanvas.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment-with-locales.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- bootstrap progress js -->
-	<script src="js/progressbar/bootstrap-progressbar.min.js"></script>
-	<script src="js/nicescroll/jquery.nicescroll.min.js"></script>
-	<!-- icheck -->
-	<script src="js/icheck/icheck.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/custom.js"></script>
-	<!-- pace -->
-	<script src="js/pace/pace.min.js"></script>
-	<!-- PNotify -->
-	<script type="text/javascript" src="js/notify/pnotify.core.js"></script>
-	<script type="text/javascript" src="js/notify/pnotify.buttons.js"></script>
-	<script type="text/javascript" src="js/notify/pnotify.nonblock.js"></script>
-
-	<script>
-    $(function() {
-      var cnt = 10; //$("#custom_notifications ul.notifications li").length + 1;
-      TabbedNotification = function(options) {
-        var message = "<div id='ntf" + cnt + "' class='text alert-" + options.type + "' style='display:none'><h2><i class='fa fa-bell'></i> " + options.title +
-          "</h2><div class='close'><a href='javascript:;' class='notification_close'><i class='fa fa-close'></i></a></div><p>" + options.text + "</p></div>";
-
-        if (document.getElementById('custom_notifications') == null) {
-          alert('doesnt exists');
-        } else {
-          $('#custom_notifications ul.notifications').append("<li><a id='ntlink" + cnt + "' class='alert-" + options.type + "' href='#ntf" + cnt + "'><i class='fa fa-bell animated shake'></i></a></li>");
-          $('#custom_notifications #notif-group').append(message);
-          cnt++;
-          CustomTabs(options);
-        }
-      }
-
-      CustomTabs = function(options) {
-        $('.tabbed_notifications > div').hide();
-        $('.tabbed_notifications > div:first-of-type').show();
-        $('#custom_notifications').removeClass('dsp_none');
-        $('.notifications a').click(function(e) {
-          e.preventDefault();
-          var $this = $(this),
-            tabbed_notifications = '#' + $this.parents('.notifications').data('tabbed_notifications'),
-            others = $this.closest('li').siblings().children('a'),
-            target = $this.attr('href');
-          others.removeClass('active');
-          $this.addClass('active');
-          $(tabbed_notifications).children('div').hide();
-          $(target).show();
-        });
-      }
-
-      CustomTabs();
-
-      var tabid = idname = '';
-      $(document).on('click', '.notification_close', function(e) {
-        idname = $(this).parent().parent().attr("id");
-        tabid = idname.substr(-2);
-        $('#ntf' + tabid).remove();
-        $('#ntlink' + tabid).parent().remove();
-        $('.notifications a').first().addClass('active');
-        $('#notif-group div').first().css('display', 'block');
-      });
-    })
-  </script>
-
-	<script>
-    $(document).ready(function() {
-      $('.progress .bar').progressbar(); // bootstrap 2
-      $('.progress .progress-bar').progressbar(); // bootstrap 3
-    });
-  </script>
-
-</body>
-
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links in navbar + footer link
+		  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+		
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+		
+		  // Store hash
+		  var hash = this.hash;
+		
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+		   // scrollTop: $(hash).offset().top
+		  }, 900, function(){
+		
+		    // Add hash (#) to URL when done scrolling (default click behavior)
+		    window.location.hash = hash;
+		    });
+		  });
+		})
+	</script>
+  </body>
 </html>
