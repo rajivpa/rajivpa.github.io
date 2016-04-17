@@ -122,5 +122,9 @@ overflow: scroll;
 
 /* Remove inner shadow from inputs on mobile iOS */
 textarea, input[type="text"] {
--webkit-appearance: none;
+    -webkit-appearance: none;
+}
+.btn-primary{
+  background-color: #32a0f5;
+  border: 1px solid #32a0f5;
 }

@@ -33,7 +33,16 @@ $(document).ready(function(){
 		$("#findBuddyPage").hide();
 		$('#upcomingTripsHome').hide();
 		$('#addTrip-step1').show();
-	})
+	});
+
+	$('#addTrpStep2Btn').on('click',function(e){
+		$("#tripsBtn").addClass("highlights");
+		$('#tripsPage').hide();
+		$("#findBuddyPage").hide();
+		$('#upcomingTripsHome').hide();
+		$('#addTrip-step1').hide();
+		$('#addTrip-step2').show();
+	});
 
 
 	$("#tripsBtn").on('onLoad',function(e){
