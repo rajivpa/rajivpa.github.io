@@ -3,19 +3,19 @@ $(document).ready(function(){
 	
 	$("#findBuddyBtn").on('click',function(e){
 		$("#tripsBtn").removeClass("highlights");
-		$("#tripsPage").slideUp("slow");
-		$("#addTrip-step1").slideUp("slow");
-		$("#upcomingTripsHome").slideUp("slow");
-		$("#findBuddyPage").slideDown("slow");
+		$("#tripsPage").hide("slow");
+		$("#addTrip-step1").hide("slow");
+		$("#upcomingTripsHome").hide("slow");
+		$("#findBuddyPage").show("slow");
 	});
 
 	$("#tripsBtn").on('click',function(e){
 
 		$("#tripsBtn").addClass("highlight");
-		$("#findBuddyPage").slideUp("slow");
-		$("#addTrip-step1").slideUp("slow");
-		$("#upcomingTripsHome").slideUp("slow");
-		$("#tripsPage").slideDown("slow");
+		$("#findBuddyPage").hide("slow");
+		$("#addTrip-step1").hide("slow");
+		$("#upcomingTripsHome").hide("slow");
+		$("#tripsPage").show("slow");
 
 	});
 	
