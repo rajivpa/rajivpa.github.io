@@ -164,7 +164,7 @@
 		    </div>
 		</div>
 	
-		<!-- Upcoming Trips Listing & Add New Trip-->
+		<!-- Upcoming Trips -->
 		<div id="upcomingTripsHome" class="row" style="display:none;height:100%">
 			<div class="col-xs-12" style="height:100%">
 				<div class="row">
@@ -184,24 +184,55 @@
 				</div>	
 			</div>
 		</div>
-
-		<div id="addNewTrip-step1" class="row" style="display:none;height:100%">
-			<div class="col-xs-12" style="height:100%">
+		<!-- Add New Trip - Step 1-->
+		<div id="addTrip-step1" class="row" style="display:none;height:100%">
+			<div class="col-xs-12" >
 				<div class="row">
-				    <div  class="col-xs-10" >
-				    	<h4>Plan A Trip</h4>
+				    <div  class="col-xs-12" >
+				    	<h3>Plan A Trip</h3>
 				    </div >
 				   
 				</div>
-				<!-- No Trips Message cont-->
-				<div class="row" style="height:100%">
-					<div style="margin-top:25%;margin-left:20%" class="col-xs-12">
-						<h4>No Upcoming Trips yet. </h4>
-					</div>
-					<div style="margin-top:10%" class="col-xs-12">	
-							     <button id="planATripBtn" type="button" class="btn btn-primary btn-block">Plan a Trip</button>
+				<!-- Origin & Destination -->
+				<div class="row" style="margin-top: 5%;">
+					<div class="col-xs-12" >
+						<div class="form-group row">
+			    		 <div class="col-xs-5">	
+			    		 		<label  for="orgCity" >From City</label>	
+							     <input type="text" class="form-control" id="orgCity" placeholder="From ">
+				         </div>
+				         <label  for="destCity" class="col-xs-2 form-control-label "><span class="glyphicon glyphicon-transfer"></span></label>
+				         <div class="col-xs-5">	
+							     <label  for="toCity" >To City</label>
+							     <input type="text" class="form-control" id="destCity" placeholder="To ">
 				         </div> 
+		    		</div>
+					</div>	
+				</div>
+				<!-- Travel Date & Time -->
+				<div class="row" style="margin-top: 10%;">
+					<div class="col-xs-12" style="margin-bottom: 5%;" >
+							
+			    		 		<label  for="orgCity" >Travel Date & Time</label>
+					</div>	
+					
+					<div class="col-xs-12">
+						
+						    
+						                <div id="datetimepicker12"></div>
+						    
+					</div>
+					 	
+
 				</div>	
+
+				<div class="form-group row">
+			    		 <div class="col-xs-12">	
+							     <button type="button" class="btn btn-primary btn-block">Next</button>
+				         </div>
+				         
+		    		</div>
+					
 			</div>
 		</div>	
 

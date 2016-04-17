@@ -5,7 +5,7 @@
 
 body {
     font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    
 }
 
  #mainCont.container-fluid {
@@ -118,4 +118,9 @@ bottom: 0;
 z-index: 0;
 overflow: scroll;
 -webkit-overflow-scrolling: touch;
+}
+
+/* Remove inner shadow from inputs on mobile iOS */
+textarea, input[type="text"] {
+-webkit-appearance: none;
 }
