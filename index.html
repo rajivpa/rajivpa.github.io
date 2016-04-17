@@ -50,30 +50,7 @@
 	<header class="clearfix">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
-		    <!-- <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Logo</a>
-		    </div>
-		    <div id="navbar" class="navbar-collapse collapse">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="#about">Profile</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Ratings</a></li>
-		            <li><a href="#">Testimonials</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Contact Us</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		    </div><!--/.nav-collapse -->
+		   
 		    	<div class="navbar-header">
                     <a class="navbar-brand" href="#">Logo</a>
                     <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
@@ -111,16 +88,19 @@
 	<!-- Main container  -->
 	<div id="mainCont" class="container-fluid scrollable">
 		 <!--  Trips Page -->
-		 <div id="tripsPage" class="row">
+		 <div id="tripsPage" class="row" style="height:100%">
 		    <div class="col-xs-12" >
 		    	<h2>Trips</h2>
 		    </div>
 		    <div class="col-xs-12" >
 		     <div class="list-group">
-				<a href="#" class="list-group-item">
+				<a href="#" id="upcmgTripDshbrd" class="list-group-item">
         			<div class="row">
         				<div class="col-xs-10" >
-			        				<h4>Upcoming Trips <span style="margin-left:5px;" >(2)</span></h4>
+			        				<h4>Upcoming Trips 
+			        					<span style="margin-left:5px;" >(2)
+			        					</span>
+			        				</h4>
 		        			<div class="row">
 		        				<div class="col-xs-5" style="font-size: 28px;color: blue">
 		        					4
@@ -147,7 +127,9 @@
 		        			
 		        		</div>
 		        		<div class="col-xs-2" >	
-        					<span style="margin-top:50px;" class="glyphicon glyphicon-menu-right pull-right"></span>
+        					<span style="margin-top:50px;" class="glyphicon glyphicon-menu-right pull-right">
+        						
+        					</span>
         				</div>
         			</div>	
 				</a>	
@@ -181,9 +163,50 @@
 		     </div>
 		    </div>
 		</div>
-		
+	
+		<!-- Upcoming Trips Listing & Add New Trip-->
+		<div id="upcomingTripsHome" class="row" style="display:none;height:100%">
+			<div class="col-xs-12" style="height:100%">
+				<div class="row">
+				    <div  class="col-xs-10" >
+				    	<h4>Upcoming Trips</h4>
+				    </div >
+				   
+				</div>
+				<!-- No Trips Message cont-->
+				<div class="row" style="height:100%">
+					<div style="margin-top:25%;margin-left:20%" class="col-xs-12">
+						<h4>No Upcoming Trips yet. </h4>
+					</div>
+					<div style="margin-top:10%" class="col-xs-12">	
+							     <button id="planATripBtn" type="button" class="btn btn-primary btn-block">Plan a Trip</button>
+				         </div> 
+				</div>	
+			</div>
+		</div>
+
+		<div id="addNewTrip-step1" class="row" style="display:none;height:100%">
+			<div class="col-xs-12" style="height:100%">
+				<div class="row">
+				    <div  class="col-xs-10" >
+				    	<h4>Plan A Trip</h4>
+				    </div >
+				   
+				</div>
+				<!-- No Trips Message cont-->
+				<div class="row" style="height:100%">
+					<div style="margin-top:25%;margin-left:20%" class="col-xs-12">
+						<h4>No Upcoming Trips yet. </h4>
+					</div>
+					<div style="margin-top:10%" class="col-xs-12">	
+							     <button id="planATripBtn" type="button" class="btn btn-primary btn-block">Plan a Trip</button>
+				         </div> 
+				</div>	
+			</div>
+		</div>	
+
 		<!--  FindBuddy Page -->
-		 <div id="findBuddyPage" class="row" style="display:none">
+		 <div id="findBuddyPage" class="row" style="display:none;height:100%">
 		    <div class="col-xs-12" >
 		    	<h2>Find Buddy</h2>
 		    </div>
@@ -238,15 +261,6 @@
 	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
 	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span><br>Ratings</a></li>
 	          </ul> 
-<!-- 
-	          <div class="col-xs-4 text-center"><a class="text-center" href="#"><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></div>
-	          <div class="col-xs-4 text-center"><a class="text-center" href="#"><span class="glyphicon glyphicon-search"></span><br>Find Buddy</a></div>
-	          <div class="col-xs-4 text-center"><a class="text-center" href="#">
-	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
-	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span>
-	            	<span class="glyphicon glyphicon glyphicon-star-empty"></span><br>Ratings</a></div>
-	        </div>
- -->	        
 	      </div>
 	    </nav>
 	</footer>
@@ -257,7 +271,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-     <script src="js/bootstrap.offcanvas.min.js"></script>
+     <script src="js/bootstrap.offcanvas.js"></script>
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment-with-locales.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
@@ -272,8 +286,6 @@
 		  // Prevent default anchor click behavior
 		  event.preventDefault();
 		
-		  
-		  
 		  });
 		})
 	</script>

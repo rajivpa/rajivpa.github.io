@@ -21,7 +21,15 @@ $(document).ready(function(){
 	
 	$('#datetimepicker1').datetimepicker({showClose:  true,ignoreReadonly: true});
 
-	
+	$('#upcmgTripDshbrd').on('click',function(e){
+		$('#tripsPage').hide();
+		$('#upcomingTripsHome').show();
+	});
+
+	$('#planATripBtn').on('click',function(e){
+		$('#upcomingTripsHome').hide();
+		$('#addTrip-step1').show();
+	})
 	
 	$("#tripsBtn").trigger("onLoad");
 });
