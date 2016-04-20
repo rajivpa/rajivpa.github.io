@@ -62,4 +62,8 @@ $('#addTrip-step2').hide();
     $(".placepicker").placepicker();
 
 	$("#tripsBtn").trigger("onLoad");
+
+	if (window.navigator.standalone) {
+ 	 $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+	}
 });
