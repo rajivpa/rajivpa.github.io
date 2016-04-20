@@ -59,5 +59,7 @@ $('#addTrip-step2').hide();
         sideBySide: true
     });
 
+    $(".placepicker").placepicker();
+
 	$("#tripsBtn").trigger("onLoad");
 });

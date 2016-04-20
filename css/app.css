@@ -13,8 +13,12 @@ body {
       padding-bottom: 50px;*/
   }
   
- #tripsPage,#upcomingTripsHome,#addTrip-step1,#addTrip-step2,#findBuddyPage{
+ #tripsPage,#upcomingTripsHome,#findBuddyPage{
     padding-top: 35%;
+    padding-bottom: 50px;
+ } 
+ #addTrip-step1,#addTrip-step2{
+    padding-top: 25%;
     padding-bottom: 50px;
  } 
 .navbar {
@@ -131,4 +135,12 @@ textarea, input[type="text"] {
 .btn-primary{
   background-color: #32a0f5;
   border: 1px solid #32a0f5;
+}
+
+#orgCity,#destCity{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
