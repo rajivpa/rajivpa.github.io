@@ -6,6 +6,7 @@ $(document).ready(function(){
 		$("#tripsPage").hide();
 		$("#addTrip-step1").hide();
 		$("#upcomingTripsHome").hide();
+		$('#addTrip-step2').hide();
 		$("#findBuddyPage").show();
 	});
 
@@ -15,6 +16,7 @@ $(document).ready(function(){
 		$("#findBuddyPage").hide();
 		$("#addTrip-step1").hide();
 		$("#upcomingTripsHome").hide();
+$('#addTrip-step2').hide();
 		$("#tripsPage").show();
 
 	});
@@ -50,7 +52,7 @@ $(document).ready(function(){
 	});
 	
 	//$('#datetimepicker1').datetimepicker({showClose:  true,ignoreReadonly: true});
-
+	console.log($("#mainCont").height());
 	
 	$('#datetimepicker12').datetimepicker({
         inline: true,

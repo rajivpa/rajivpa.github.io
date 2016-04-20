@@ -9,10 +9,14 @@ body {
 }
 
  #mainCont.container-fluid {
-      padding-top: 80px;
-      padding-bottom: 50px;
+      /*padding-top: 80px;
+      padding-bottom: 50px;*/
   }
   
+ #tripsPage,#upcomingTripsHome,#addTrip-step1,#addTrip-step2,#findBuddyPage{
+    padding-top: 35%;
+    padding-bottom: 50px;
+ } 
 .navbar {
     font-family: Montserrat, sans-serif;
 }
