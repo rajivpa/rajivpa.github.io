@@ -52,7 +52,6 @@ $('#addTrip-step2').hide();
 	});
 	
 	//$('#datetimepicker1').datetimepicker({showClose:  true,ignoreReadonly: true});
-	console.log($("#mainCont").height());
 	
 	$('#datetimepicker12').datetimepicker({
         inline: true,
@@ -62,6 +61,17 @@ $('#addTrip-step2').hide();
     $(".placepicker").placepicker();
 
 	$("#tripsBtn").trigger("onLoad");
+
+$("#tripsTgl :input").on('change',function(e){
+	if($(this)[0].id == 'pastTripTgl'){
+		$('#pastTrpMsg').show();
+		$('#upcmgTrpMsg').hide();
+	}else{
+		$('#pastTrpMsg').hide();
+		$('#upcmgTrpMsg').show();	
+	}
+
+});
 
 	if (window.navigator.standalone) {
  	 $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
