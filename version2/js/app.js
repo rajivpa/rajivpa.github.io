@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$("#tripsBtn").addClass("highlight");
 		$("#findBuddyPage").hide();
 		$("#addTrip-step1").hide();
-		$("#upcomingTripsHome").hide();
+		$("#upcomingTripsHome").show();
 $('#addTrip-step2').hide();
 		$("#tripsPage").show();
 

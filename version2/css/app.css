@@ -13,11 +13,11 @@ body {
       padding-bottom: 50px;*/
   }
   
- #tripsPage,#upcomingTripsHome,#findBuddyPage{
+ #tripsPage,#findBuddyPage{
     padding-top: 35%;
     padding-bottom: 50px;
  } 
- #addTrip-step1,#addTrip-step2{
+ #upcomingTripsHome,#addTrip-step1,#addTrip-step2{
     padding-top: 25%;
     padding-bottom: 50px;
  } 
@@ -142,5 +142,10 @@ textarea, input[type="text"] {
   border-right: none;
   border-left: none;
   box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#tripsTgl>.btn.active{
+   box-shadow: none;
   -webkit-box-shadow: none;
 }

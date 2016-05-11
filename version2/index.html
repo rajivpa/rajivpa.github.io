@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+   
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -89,11 +89,11 @@
 	<!-- Main container  -->
 	<div id="mainCont" class="container-fluid scrollable" >
 		 <!--  Trips Page -->
-		<div id="tripsPage" class="row" >
+<!--		<div id="tripsPage" class="row" >
 		    <!-- <div class="col-xs-12" >
 				    	<h2>Trips</h2>
 				    </div>-->
-		    <div class="col-xs-12">
+<!--		    <div class="col-xs-12">
 		        <div class="list-group">
 		            <a href="#" id="upcmgTripDshbrd" class="list-group-item">
 		                <div class="row">
@@ -161,10 +161,11 @@
 		        </div>
 		    </div>
 		</div>
-	
+-->	
 		<!-- Upcoming Trips -->
-		<div id="upcomingTripsHome" class="row" style="display:none;height:100%">
-			<div class="col-xs-12" style="height:100%">
+		<div id="upcomingTripsHome" class="row" >
+		
+			<div class="col-xs-12" >
 				<!--<div class="row">
 				    <div  class="col-xs-10" >
 				    	<h4>Upcoming Trips</h4>
@@ -179,6 +180,8 @@
     <input type="radio" name="options" id="pastTripTgl" autocomplete="off"> PAST TRIPS
   </label>
 				 </div>
+				</div>
+				<div class="col-xs-12" >
 
 				<!-- No Trips Message cont-->
 				<div class="row" id="upcmgTrpMsg" style="height:100%">
@@ -191,10 +194,12 @@
 				</div>
 				
 				<!-- No Trips Message cont-->
-				<div class="row"  id="pastTrpMsg" style="height:100%;display: none">
-					<div style="margin-top:25%;margin-left:30%" class="col-xs-12">
+				<div class="row"  id="pastTrpMsg" style="display: none;margin-top:25%;">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-6">
 						<h4>No Trips to show </h4>
 					</div>
+					<div class="col-xs-3"></div>
 				</div>
 
 			</div>
@@ -210,16 +215,16 @@
 				</div>-->
 				<!-- Origin & Destination -->
 				<div class="row" >
-					<div class="col-xs-10" >	
-			    		 		<label  for="orgCity" >FROM</label>	
-							     <input id="orgCity" class="placepicker form-control" style="font-size: 20px;padding: 0"  placeholder="Origin City"/>
+					<div class="col-xs-6" >	
+			    		 		<label  for="orgCity" > FROM</label>	
+							     <input id="orgCity" class="placepicker form-control" style="padding: 0"  placeholder="Origin City"/>
 		    		</div>
 					
-				</div>
-				<div class="row" style="margin-top: 5%;">
-					<div class="col-xs-10" >	
+				<!--</div>
+				<div class="row" style="margin-top: 8%;">-->
+					<div class="col-xs-6" >	
 							     <label  for="destCity" >TO</label>
-							     <input id="destCity" class="placepicker form-control" style="font-size: 20px;padding: 0" placeholder="Destination City">
+							     <input id="destCity" class="placepicker form-control" style="padding: 0" placeholder="Destination City">
 				        
 					</div>	
 				</div>
@@ -333,12 +338,12 @@
 		</div>
 	</div>
    
-	<footer class="clearfix">
+	<!--<footer class="clearfix">
 		<nav class="navbar navbar-inverse navbar-fixed-bottom" style="height:50px;">
 	      <div  class="container-fluid">
 	        <!-- 'Sticky' (non-collapsing)  menu item(s) -->
 	        
-	          <ul class="nav navbar-nav row" style="margin: 0px;">
+	    <!--      <ul class="nav navbar-nav row" style="margin: 0px;">
 	            <li id="trips" class="col-xs-3 col-sm-3 col-md-3"><a id="tripsBtn" class="text-center " ><span class="glyphicon glyphicon-plane  gly-rotate-90"></span><br>Trips</a></li>
 	            <li class="col-xs-5 col-sm-5 col-md-5"><a id="findBuddyBtn" class="text-center" ><span class="glyphicon glyphicon-search"></span><br>Find Buddy</a></li>
 	            <li class="col-xs-4 col-sm-4 col-md-4"><a class="text-center"  >
@@ -348,7 +353,7 @@
 	          </ul> 
 	      </div>
 	    </nav>
-	</footer>
+	</footer> -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
